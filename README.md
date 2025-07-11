@@ -22,7 +22,7 @@ Official repository of **​​DH-FaceVid-1K: A Large-Scale High-Quality Dataset
 
 ## Dataset Overview
 
-![Dataset Overview](figures/1.png)
+![Dataset Overview](static/images/1.png)
 
 Overview of DH-FaceVid-1K Dataset. It consists of 270,043 video clips along with corresponding spoken audio and annotations, featuring more than 20,000 unique identities and over 1,200 hours of facial video footage captured under various environmental conditions and lighting scenarios. Notably, 83% of the dataset represents Asian individuals, addressing the significant shortage of open-source Asian face video datasets.
 
