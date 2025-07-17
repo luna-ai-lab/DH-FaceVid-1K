@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="./assets/logo.svg" alt="DH-FaceVid-1K Logo" width="150">
+<img src="https://raw.githubusercontent.com/luna-ai-lab/DH-FaceVid-1K/main/assets/logo.svg" alt="DH-FaceVid-1K Logo" width="150">
+
 
 # DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation
 
