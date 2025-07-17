@@ -10,7 +10,7 @@
 
 </div>
 
-Official repository of **​​DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation**, accepted by ICCV 2025.
+Official repository of **​​DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation**.
 
 *[Donglin Di](https://scholar.google.com/citations?hl=zh-CN&user=L8tcNioAAAAJ), [He Feng](https://github.com/fenghe12), [Wenzhang Sun](https://scholar.google.hk/citations?user=3-9aEOQAAAAJ&hl=zh-CN&oi=ao), [Yongjia Ma](https://scholar.google.hk/citations?user=BszRJxkAAAAJ&hl=zh-CN&oi=ao), [Hao Li](#), [Chen Wei](#), [Lei Fan](https://hellodfan.github.io/), [Tonghua Su](https://scholar.google.hk/citations?hl=zh-CN&user=67fxVzoAAAAJ), [Xun Yang](https://scholar.google.hk/citations?hl=zh-CN&user=ro8lzsUAAAAJ)*
 
@@ -30,11 +30,11 @@ Overview of DH-FaceVid-1K Dataset. It consists of 270,043 video clips along with
 
 If you wish to download the DH-FaceVid-1K dataset, please follow these steps:
 
-1.  **Fill out the form**: To prevent misuse of the dataset, we require you to submit information for review and approval. Please carefully fill out [**this form**](https://forms.gle/vEyouWdS9CgcRFMt9). **You must use an official institutional email address and clearly state your research purpose.** Requests from personal email providers (e.g., Gmail, Outlook) will be rejected. When filling out the form, ensure your information is accurate, especially **your email address**, as this is where we will send the download instructions.
+1.  **Fill out the request form**: To prevent misuse of the dataset, we require you to submit information for review and approval. Please carefully fill out [**this form**](https://forms.gle/vEyouWdS9CgcRFMt9). **You must use an official institutional email address and clearly state your research purpose.** Requests from personal email providers (e.g., Gmail, Outlook) will be rejected. When filling out the form, ensure your information is accurate, especially **your email address**, as this is where we will send the download instructions.
 
 2.  **Await email delivery**: Once we receive and approve your submission, we will send you an email with download instructions, typically **within 2-3 days**. Please keep an eye on your inbox, including the spam or junk mail folders, to avoid missing our message.
 
-3.  **Download the dataset**: After receiving the email, you can click the download link provided and follow the instructions on the page to complete the download process. If you encounter any issues or do not receive the email within a reasonable time, please contact us at **fenghe021209@gmail.com**, and we will do our best to assist you.
+3.  **Download the dataset**: After receiving the email, you can click the download link provided and follow the instructions on the page to complete the download process. If you encounter any issues or do not receive the email within a reasonable time, please contact us at **fenghe021209@gmail.com**.
 
 **Note:** These video samples are sourced from crowd-sourcing platforms. To ensure the proper use of the data and prevent misuse, we manually review all download requests. By downloading and using this dataset, you are required to comply with [**the license agreement**](https://github.com/luna-ai-lab/DH-FaceVid-1K/blob/main/LICENSE). Thank you for your understanding and cooperation.
 
