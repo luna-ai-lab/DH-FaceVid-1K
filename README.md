@@ -134,6 +134,7 @@ Distributions of general appearances, hair colors, emotions, actions, ethnicity,
 
 ![Collection Pipeline](static/images/collect_pipe.png)
 
+Illustration of the processing pipeline for collecting the DH-FaceVid-1K dataset. The main steps include: (1) collecting raw videos from crowdsourcing platforms; (2) detecting face regions, assessing their resolution, and cropping to the face and torso; (3) filtering out noisy clips, such as those with embedded subtitles or occluding hands; and (4) generating video descriptions that accurately profile the subject's ethnicity, gender, age, expression, and attire.
 ---
 
 ## 📋 Comprehensive Attribute List
