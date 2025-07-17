@@ -51,9 +51,6 @@ Our open-source roadmap is as follows. We will update the status here as we make
 
 ## Video Samples in DH-FaceVid-1K
 
-<h2>Video Samples in DH-FaceVid-1K (7x4 Curated Grid)</h2>
-
-<h2>Video Samples in DH-FaceVid-1K (7x5 Grid)</h2>
 
 <table class="center" style="border-collapse: collapse; margin: auto;">
   <!-- Row 1 -->
