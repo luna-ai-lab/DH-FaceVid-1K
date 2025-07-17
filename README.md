@@ -39,6 +39,15 @@ To prevent misuse of the DH-FaceVid-1K dataset, we require you to submit informa
  
 Once approved, we will send you download instructions within 1-2 days. After receiving the download instruction email, you can click the download link in the email and follow the instructions on the page to complete the dataset download process. If you encounter any issues during the download or do not receive the email within a reasonable time, please contact us at [fenghe021209@gmail.com](mailto:fenghe021209@gmail.com).
 
+## Open-source Plan
+
+Our open-source plan will be carried out in the following four phases:
+
+-   **Phase 1:** Open filtered public datasets video ID list
+-   **Phase 2:** Open 10% of total data
+-   **Phase 3:** Open 40% of total data
+-   **Phase 4:** Open 50% of total data
+
 ## Face Video Datasets Comparison
 
 Compared with other datasets, FaceVid-1K has a larger data volume, competitive quality, and richer attribute annotations.
