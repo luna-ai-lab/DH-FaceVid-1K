@@ -26,18 +26,20 @@ Official repository of **​​DH-FaceVid-1K: A Large-Scale High-Quality Dataset
 
 Overview of DH-FaceVid-1K Dataset. It consists of 270,043 video clips along with corresponding spoken audio and annotations, featuring more than 20,000 unique identities and over 1,200 hours of facial video footage captured under various environmental conditions and lighting scenarios. Notably, 83% of the dataset represents Asian individuals, addressing the significant shortage of open-source Asian face video datasets.
 
-## Download DH-FaceVid-1K
 
-[![Download](https://img.shields.io/badge/Dataset-Apply_Access-blue)](https://forms.gle/vEyouWdS9CgcRFMt9)
+## Download
 
-270k samples / 1.2k hrs duration / ~4.01 TB
+**Scale:** 270k samples / 1.2k hrs duration / ~4.01 TB
 
-**🔥 Please Note**  
-These video samples are sourced from crowd-sourcing platforms. To prevent data misuse, users must adhere to the relevant licensing agreements to access these video data. Our licensing agreement can be found [here](https://github.com/DH-FaceVid-1K/DH-FaceVid-1K/blob/main/LICENSE).  
- 
-To prevent misuse of the DH-FaceVid-1K dataset, we require you to submit information for review and approval before granting download access. Please fill out the form [here](https://forms.gle/vEyouWdS9CgcRFMt9).  
- 
-Once approved, we will send you download instructions within 1-2 days. After receiving the download instruction email, you can click the download link in the email and follow the instructions on the page to complete the dataset download process. If you encounter any issues during the download or do not receive the email within a reasonable time, please contact us at [fenghe021209@gmail.com](mailto:fenghe021209@gmail.com).
+If you wish to download the DH-FaceVid-1K dataset, please follow these steps:
+
+1.  **Fill out the form**: To prevent misuse of the dataset, we require you to submit information for review and approval. Please carefully fill out [**this form**](https://forms.gle/vEyouWdS9CgcRFMt9). **You must use an official institutional email address and clearly state your research purpose.** Requests from personal email providers (e.g., Gmail, Outlook) will be rejected. When filling out the form, ensure your information is accurate, especially **your email address**, as this is where we will send the download instructions.
+
+2.  **Await email delivery**: Once we receive and approve your submission, we will send you an email with download instructions, typically **within 2-3 days**. Please keep an eye on your inbox, including the spam or junk mail folders, to avoid missing our message.
+
+3.  **Download the dataset**: After receiving the email, you can click the download link provided and follow the instructions on the page to complete the download process. If you encounter any issues or do not receive the email within a reasonable time, please contact us at **fenghe021209@gmail.com**, and we will do our best to assist you.
+
+**Note:** These video samples are sourced from crowd-sourcing platforms. To ensure the proper use of the data and prevent misuse, we manually review all download requests. By downloading and using this dataset, you are required to comply with [**the license agreement**](https://github.com/DH-FaceVid-1K/DH-FaceVid-1K/blob/main/LICENSE). Thank you for your understanding and cooperation.
 
 ## Open-source Plan
 
