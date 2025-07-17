@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/logo.svg" alt="DH-FaceVid-1K Logo" width="150">
+
 # DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation
 
 <span style="font-size: 24px; font-weight: bold;">🏆 ICCV 2025 🏆</span>
@@ -44,8 +46,8 @@ If you wish to download the DH-FaceVid-1K dataset, please follow these steps:
 
 Our open-source roadmap is as follows. We will update the status here as we make progress.
 
-- [ ] **Phase 1:** Open filtered public datasets video ID list
-- [ ] **Phase 2:** Open 10% of total data
+- [x] **Phase 1:** Open filtered public datasets video ID list *(In Progress)*
+- [x] **Phase 2:** Open 10% of total data *(In Progress)*
 - [ ] **Phase 3:** Open 40% of total data
 - [ ] **Phase 4:** Open 50% of total data
 
@@ -157,14 +159,9 @@ Comprehensive attribute list of DH-FaceVid-1K, including ethnicities, appearance
 ## ✒️ Citation
 
 If you find the DH-FaceVid-1K dataset useful for your work, please consider citing our paper:
-```
-@inproceedings{di2025dhfacevid1k,
-  title={DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
-  author={Donglin Di and He Feng and Wenzhang Sun and Yongjia Ma and Hao Li and Chen Wei and Lei Fan and Tonghua Su and Xun Yang},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year={2025}
+@inproceedings{di2025facevid,
+title = {DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
+author = {Di, Donglin and Feng, He and Sun, Wenzhang and Ma, Yongjia and Li, Hao and Chen, Wei and Fan, Lei and Su, Tonghua and Yang, Xun},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+year = {2025}
 }
-```
-
-<!-- # Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. -->

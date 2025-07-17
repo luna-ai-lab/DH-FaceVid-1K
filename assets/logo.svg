@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="face-clip-b">
+        <path d="M 100,20 C 60,20 30,50 30,100 C 30,170 70,190 100,190 C 130,190 170,170 170,100 C 170,50 140,20 100,20 Z" />
+      </clipPath>
+    </defs>
+    <g clip-path="url(#face-clip-b)">
+      <polygon points="30,20 100,100 30,120" fill="#003f5c"/>
+      <polygon points="30,20 100,20 100,100" fill="#2f4b7c"/>
+      <polygon points="100,20 170,20 100,100" fill="#665191"/>
+      <polygon points="170,20 170,120 100,100" fill="#a05195"/>
+      <polygon points="30,120 100,100 100,190 30,190" fill="#d45087"/>
+      <polygon points="100,100 170,120 170,190 100,190" fill="#f95d6a"/>
+      <polygon points="100,100 100,190 130,150" fill="#ff7c43"/>
+      <polygon points="100,100 70,150 100,190" fill="#ffa600"/>
+    </g>
+    <circle cx="75" cy="90" r="12" fill="#ffffff"/>
+    <polygon points="71,84 82,90 71,96" fill="#003f5c"/>
+    <circle cx="125" cy="90" r="8" fill="#ffffff" />
+    <circle cx="125"cy="90" r="4" fill="#003f5c" />
+    <path d="M 90,140 Q 100,150 110,140" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

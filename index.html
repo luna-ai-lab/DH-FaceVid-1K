@@ -1,849 +1,423 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Core SEO Meta Tags -->
-    <title>DH-FaceVid-1K: Large-Scale Multi-Ethnic Face Video Dataset for Generative AI</title>
-    <meta name="description" content="DH-FaceVid-1K: A 1,200-hour, 270K+ video dataset with speech audio, facial keypoints, and text annotations. Designed to advance high-resolution face video generation (text/image-to-video) and mitigate demographic bias, with emphasis on Asian representation.">
-    <meta name="keywords" content="DH-FaceVid-1K, Face Video Dataset, Talking Head Generation, Multi-Ethnic Facial Data, High-Resolution Video Synthesis, Text-to-Video AI, Image-to-Video AI, Asian Face Representation, Generative AI Benchmark">
-    <meta name="robots" content="index, follow">
+    <!-- SEO and Metadata -->
+    <title>DH-FaceVid-1K: Large-Scale High-Quality Dataset for Face Video Generation</title>
+    <meta name="description" content="DH-FaceVid-1K: A 1,200-hour, 270K+ video dataset with speech audio, facial keypoints, and text annotations. Designed to advance high-resolution face video generation and mitigate demographic bias, with emphasis on Asian representation.">
+    <meta name="keywords" content="DH-FaceVid-1K, Face Video Dataset, Talking Head Generation, Multi-Ethnic Facial Data, High-Resolution Video Synthesis, Text-to-Video AI, Image-to-Video AI, Asian Face Representation, Generative AI, ICCV 2025">
     
-    <!-- Open Graph / Twitter Cards -->
-    <meta property="og:title" content="DH-FaceVid-1K: Bridging the Gap in Multi-Ethnic Face Video Data">
-    <meta property="og:description" content="270,000+ high-quality videos from 20K+ individuals with speech, keypoints, and annotations. Supports text/image-to-video generation and scaling law analysis.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/dh-facevid-1k">
-    <meta property="og:image" content="https://yourdomain.com/preview-multietnic-samples.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="DH-FaceVid-1K sample videos showcasing diverse ethnicities">
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Academic Metadata -->
-    <meta name="citation_title" content="DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Mitigating Bias in Face Video Generation">
-    <meta name="citation_author" content="Li Auto, Harbin Institute of Technology">
-    <meta name="citation_publication_date" content="2024">
-    <meta name="citation_dataset" content="DH-FaceVid-1K">
-    <meta name="citation_keywords" content="video dataset, generative AI, facial animation, demographic diversity">
-    
-    <!-- Technical Resources -->
-    <link rel="canonical" href="https://yourdomain.com/dh-facevid-1k">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <!-- Consolidated CSS -->
     <style>
-      * {
-        font-family: 'Roboto', sans-serif;
-        padding: 0;
-        margin: 0;
-        outline: none;
-      }
       body {
-        line-height: 1.6;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.7;
+        color: #333;
+      }
+      .container {
+          max-width: 1320px;
+      }
+
+      /* --- NEW: Header & Logo Side-by-Side Styling --- */
+      .title-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px; /* Space between logo and text */
+        margin-bottom: 2rem;
+      }
+      .logo-container svg {
+        width: 100px; /* Adjusted size for side-by-side layout */
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .title-text-block {
+        text-align: left; /* Align text to the left in this block */
+      }
+      h1 { font-weight: 700; font-size: 2.5rem; margin-bottom: 0.25rem; }
+      .publication-venue {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #28a745;
+        margin-bottom: 0;
+      }
+      /* --- End Header Styling --- */
+      
+      .author-line, .institution-line { font-size: 1.1rem; line-height: 1.8; }
+      .author-block, .inst-block { display: inline-block; margin: 0 0.5rem; }
+      .inst-block { color: #555; }
+      
+      .section-title, .title { 
+        font-size: 2rem; font-weight: 700; 
+        border-bottom: 2px solid #eee; padding-bottom: 0.5rem; 
+        margin-bottom: 2rem;
+      }
+      .section-subtitle { font-size: 1.25rem; font-weight: 500; color: #666; margin-top: 2rem; }
+      .section-text { text-align: justify; }
+
+      .abstract-text { font-style: italic; }
+      .tldr { font-size: 1.1em; margin-top: 1.5rem; padding: 1rem; background-color: #f8f9fa; border-left: 4px solid #007bff; }
+
+      .description {
+        font-size: 1.1rem;
+        color: #6c757d;
+        margin-top: 1rem;
+      }
+      .btn-download-specific {
+        display: inline-block; font-weight: 500; color: #fff; background-color: #28a745;
+        border-color: #28a745; padding: 0.75rem 1.5rem; font-size: 1.25rem;
+        line-height: 1.5; border-radius: 0.3rem; text-decoration: none;
+        transition: all .15s ease-in-out; margin-top: 1.5rem;
+      }
+      .btn-download-specific:hover {
+        color: #fff; background-color: #218838; border-color: #1e7e34; text-decoration: none;
+      }
+      .download-alert { background-color: #fff8e1; border: 1px solid #ffecb3; padding: 1.5rem; border-radius: 8px; text-align: left; }
+      .download-alert h3 { margin-top: 0; color: #c09300; }
+
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .timeline { 
+        position: relative; padding-left: 50px; list-style: none;
+      }
+      .timeline::before { 
+        content: ''; position: absolute; top: 0; left: 18px; 
+        height: 100%; width: 4px; background: #e9ecef; border-radius: 2px; 
+      }
+      .timeline-item { 
+        position: relative; margin-bottom: 40px; 
+        animation: fadeInUp 0.5s ease-out forwards;
+        opacity: 0;
+      }
+      .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+      .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+      .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+      .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+      .timeline-item.status-current::after {
+        content: ''; position: absolute; top: 18px; left: 18px;
+        width: 4px; height: calc(100% + 40px); background-color: #007bff; z-index: 0;
+      }
+      .timeline-item:first-child.status-current::after { top: 0; }
+      
+      .timeline-dot { 
+        position: absolute; left: 0; top: 0; transform: translateX(-50%); 
+        width: 36px; height: 36px; border-radius: 50%; background: #fff; 
+        border: 4px solid; z-index: 1; display: flex;
+        justify-content: center; align-items: center; font-size: 1.1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+      .timeline-content { padding-left: 30px; }
+      .timeline-content h3 { 
+        font-size: 1.4em; font-weight: 600; color: #343a40; 
+        margin: 0 0 8px 0; display: flex; align-items: center;
+      }
+      .timeline-content p { margin: 0; color: #495057; }
+      .timeline-status {
+        font-size: 0.6em; font-weight: 700; padding: 4px 10px;
+        border-radius: 12px; margin-left: 12px;
+      }
+      
+      .timeline-item.status-current .timeline-dot { border-color: #007bff; background-color: #007bff; color: white; }
+      .timeline-item.status-current .timeline-status { background-color: #e6f2ff; color: #007bff; }
+      .timeline-item.status-current p { color: #0056b3; font-weight: 500; }
+
+      .timeline-item.status-future { opacity: 0.7; }
+      .timeline-item.status-future .timeline-dot { border-color: #6c757d; background-color: #fff; color: #6c757d; }
+      .timeline-item.status-future .timeline-status { background-color: #f8f9fa; color: #6c757d; }
+      .timeline-item.status-future h3, .timeline-item.status-future p { color: #6c757d; }
+
+      .figure-img { max-width: 80%; display: block; margin: 1rem auto; }
+
+      .video-gallery {
+        display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px; background-color: #f8f9fa; padding: 20px; border-radius: 8px;
+      }
+      .video-wrapper {
+        position: relative; width: 100%; padding-top: 100%;
+        border-radius: 8px; overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        cursor: pointer; transition: transform 0.2s ease;
+      }
+      .video-wrapper:hover { transform: scale(1.05); z-index: 10; }
+      .video-wrapper video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+      .video-title {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        background: rgba(0,0,0,0.6); color: white;
+        padding: 5px; font-size: 12px; text-align: center;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        opacity: 0; transition: opacity 0.2s ease;
+      }
+      .video-wrapper:hover .video-title { opacity: 1; }
+
+      .bibtex-box pre { background-color: #f8f9fa; padding: 1.5rem; border-radius: 5px; white-space: pre-wrap; word-break: break-all; }
+      
+      @media (max-width: 768px) {
+        /* Responsive: Stack logo and title on mobile */
+        .title-header {
+          flex-direction: column;
+          gap: 15px;
+        }
+        .title-text-block {
+          text-align: center;
+        }
+        h1 { font-size: 2rem; }
+        .publication-venue { font-size: 1.1rem; }
+        .figure-img { max-width: 100%; }
+        .video-gallery { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+        .timeline { padding-left: 30px; }
+        .timeline-content { padding-left: 20px; }
       }
     </style>
-  </head>
+</head>
 
 <body>
-  <div class="container">
-    <br>
-    <div style="text-align: center;">  
-
-      <h1> DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation</h1>
-
- <!-- Authors -->
- <div class="scroll-container">
-  <div class="author-line">
-    <span class="author-block">
-      <a href="https://scholar.google.com/citations?hl=zh-CN&user=L8tcNioAAAAJ">Donglin Di</a><sup>1</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://github.com/fenghe12">He Feng</a><sup>2</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://scholar.google.hk/citations?user=3-9aEOQAAAAJ&hl=zh-CN&oi=ao">Wenzhang Sun</a><sup>1</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://scholar.google.hk/citations?user=BszRJxkAAAAJ&hl=zh-CN&oi=ao">Yongjia Ma</a><sup>1</sup>,
-    </span>
-    <span class="author-block">
-      <a href="#">Hao Li</a><sup>1</sup>,
-    </span>
-    <span class="author-block">
-      <a href="#">Chen Wei</a><sup>1</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://hellodfan.github.io/">Lei Fan</a><sup>3</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://scholar.google.hk/citations?hl=zh-CN&user=67fxVzoAAAAJ">Tonghua Su</a><sup>2</sup>,
-    </span>
-    <span class="author-block">
-      <a href="https://scholar.google.hk/citations?hl=zh-CN&user=ro8lzsUAAAAJ">Xun Yang</a><sup>4</sup>
-    </span>
-  </div>
-</div>
-<!-- Institutions -->
-<div class="scroll-container">
-  <div class="institution-line">
-    <span class="inst-block"><sup>1</sup>Li Auto</span>
-    <span class="inst-block"><sup>2</sup>Harbin Institute of Technology</span>
-    <span class="inst-block"><sup>3</sup>University of New South Wales</span>
-    <span class="inst-block"><sup>4</sup>University of Science and Technology of China</span>
-  </div>
-</div>
-     
-    <div class="text-center" style="font-size: 1.5em; margin-top: 25px;">
-      <a class="btn btn-primary btn-lg" href="https://arxiv.org/abs/2410.07151" role="button"
-        style="margin-right: 10px; margin-bottom: 10px;">Paper</a>
-      <a class="btn btn-primary btn-lg" href="javascript:void(0);" role="button"
-        style="margin-right: 10px; margin-bottom: 10px;">Video</a>
-      <a class="btn btn-primary btn-lg" href="javascript:void(0);" role="button"
-        style="margin-right: 10px; margin-bottom: 10px;">Poster</a>
-      <a class="btn btn-primary btn-lg" href="https://forms.gle/vEyouWdS9CgcRFMt9" role="button"
-        style="margin-bottom: 10px;">Data</a>
-    </div>
-    <div class="container">
-      <style>
-          .btn-download-specific {
-              display: block;
-              width: 100%;
-              padding: 10px;
-              margin: 10px 0;
-              background-color: #4CAF50;
-              color: white;
-              text-align: center;
-              text-decoration: none;
-              font-weight: bold;
-              border-radius: 5px;
-              transition: background-color 0.3s;
-          }
+  <div class="container my-4">
     
-          .btn-download-specific:hover {
-              background-color: #45a049;
-          }
-    
-          .title, .description {
-              text-align: center;
-          }
-      </style>
-    <div style="margin-top: 30px;">
-      <h2 class="text-center">
-        Abstract
-      </h2>
-      <p style="font-style: italic; margin-bottom: 5px;">
-        Human-centric generative models are becoming increasingly popular, giving rise to various innovative tools and applications, such as talking face videos conditioned on text or audio prompts. The core of these capabilities lies in powerful pretrained foundation models, trained on large-scale, high-quality datasets. However, many advanced methods rely on in-house data subject to various constraints, and other current studies fail to generate high-resolution face videos, which is mainly attributed to the significant lack of large-scale, high-quality face video datasets. In this paper, we introduce a human face video dataset, <strong>DH-FaceVid-1K</strong>. Our collection spans <strong>1200 hours</strong> in total, encompassing <strong> 270,043 </strong> video samples from over <strong>20,000</strong> individuals. Each sample includes corresponding speech audio, facial keypoints, and text annotations. Compared to other publicly available datasets, ours distinguishes itself through its multi-ethnic coverage and high-quality comprehensive individual attributes. We establish multiple face video generation models supporting tasks such as Text-to-Video and Image-to-Video generation. In addition, we develop comprehensive benchmarks to validate the scaling law when using different proportions of our dataset. Our primary aim is to contribute a face video dataset, particularly addressing the underrepresentation of Asian faces in existing curated datasets and thereby enriching the global spectrum of face-centric data and mitigating demographic biases.
-      </p>
-      <p style="font-size: 1.2em; margin-top: 0px;">
-        <span style="font-weight: bold;">TL;DR: We introduce DH-FaceVid-1K, a large-scale, high-quality multi-ethnic face video dataset with comprehensive attributes, enabling diverse generation tasks and benchmarks while mitigating demographic biases.
-      </p>
+    <!-- Header -->
+    <div class="text-center">
+      <!-- LOGO & TITLE SIDE-BY-SIDE -->
+      <div class="title-header">
+        <div class="logo-container">
+          <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="face-clip-b">
+                <path d="M 100,20 C 60,20 30,50 30,100 C 30,170 70,190 100,190 C 130,190 170,170 170,100 C 170,50 140,20 100,20 Z" />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#face-clip-b)">
+              <polygon points="30,20 100,100 30,120" fill="#003f5c"/>
+              <polygon points="30,20 100,20 100,100" fill="#2f4b7c"/>
+              <polygon points="100,20 170,20 100,100" fill="#665191"/>
+              <polygon points="170,20 170,120 100,100" fill="#a05195"/>
+              <polygon points="30,120 100,100 100,190 30,190" fill="#d45087"/>
+              <polygon points="100,100 170,120 170,190 100,190" fill="#f95d6a"/>
+              <polygon points="100,100 100,190 130,150" fill="#ff7c43"/>
+              <polygon points="100,100 70,150 100,190" fill="#ffa600"/>
+            </g>
+            <circle cx="75" cy="90" r="12" fill="#ffffff"/>
+            <polygon points="71,84 82,90 71,96" fill="#003f5c"/>
+            <circle cx="125" cy="90" r="8" fill="#ffffff" />
+            <circle cx="125"cy="90" r="4" fill="#003f5c" />
+            <path d="M 90,140 Q 100,150 110,140" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="title-text-block">
+          <h1>DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation</h1>
+          <h3 class="publication-venue">Accepted to the IEEE/CVF International Conference on Computer Vision (ICCV) 2025</h3>
+        </div>
+      </div>
+      
+      <div class="author-line">
+        <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&user=L8tcNioAAAAJ">Donglin Di</a><sup>1</sup>,</span>
+        <span class="author-block"><a href="https://github.com/fenghe12">He Feng</a><sup>2</sup>,</span>
+        <span class="author-block"><a href="https://scholar.google.hk/citations?user=3-9aEOQAAAAJ&hl=zh-CN&oi=ao">Wenzhang Sun</a><sup>1</sup>,</span>
+        <span class="author-block"><a href="https://scholar.google.hk/citations?user=BszRJxkAAAAJ&hl=zh-CN&oi=ao">Yongjia Ma</a><sup>1</sup>,</span>
+        <span class="author-block"><a href="#">Hao Li</a><sup>1</sup>,</span>
+        <span class="author-block"><a href="#">Chen Wei</a><sup>1</sup>,</span>
+        <span class="author-block"><a href="https://hellodfan.github.io/">Lei Fan</a><sup>3</sup>,</span>
+        <span class="author-block"><a href="https://scholar.google.hk/citations?hl=zh-CN&user=67fxVzoAAAAJ">Tonghua Su</a><sup>2</sup>,</span>
+        <span class="author-block"><a href="https://scholar.google.hk/citations?hl=zh-CN&user=ro8lzsUAAAAJ">Xun Yang</a><sup>4</sup></span>
+      </div>
+      <div class="institution-line mt-2">
+        <span class="inst-block"><sup>1</sup>Li Auto</span>
+        <span class="inst-block"><sup>2</sup>Harbin Institute of Technology</span>
+        <span class="inst-block"><sup>3</sup>University of New South Wales</span>
+        <span class="inst-block"><sup>4</sup>University of Science and Technology of China</span>
+      </div>
+      <div class="mt-4">
+        <a class="btn btn-primary btn-lg m-2" href="https://arxiv.org/abs/2410.07151" role="button">Paper</a>
+        <a class="btn btn-secondary btn-lg m-2" href="javascript:void(0);" role="button">Video</a>
+        <a class="btn btn-secondary btn-lg m-2" href="javascript:void(0);" role="button">Poster</a>
+        <a class="btn btn-success btn-lg m-2" href="https://forms.gle/vEyouWdS9CgcRFMt9" role="button">Data</a>
+      </div>
     </div>
 
-
-    <div style="margin-top: 50px;">
+    <!-- 1. MERGED Abstract & Overview Section -->
+    <div class="my-5">
+      <h2 class="section-title">📜 Abstract & Overview</h2>
+      <img src="static/images/1.png" class="img-fluid rounded figure-img" alt="Overview of the DH-FaceVid-1K dataset">
+      <p class="section-text mt-3">
+        The figure above illustrates the scale and diversity of the DH-FaceVid-1K dataset. It features over 270,000 video clips from more than 20,000 unique individuals, totaling over 1,200 hours. A key feature is its rich multi-ethnic composition, with a significant focus on Asian faces to address existing data gaps.
+      </p>
+      <p class="abstract-text section-text mt-4">
+        Human-centric generative models are becoming increasingly popular, giving rise to various innovative tools and applications, such as talking face videos conditioned on text or audio prompts. The core of these capabilities lies in powerful pretrained foundation models, trained on large-scale, high-quality datasets. However, many advanced methods rely on in-house data subject to various constraints, and other current studies fail to generate high-resolution face videos, which is mainly attributed to the significant lack of large-scale, high-quality face video datasets. In this paper, we introduce a human face video dataset, <strong>DH-FaceVid-1K</strong>. Our collection spans <strong>1200 hours</strong> in total, encompassing <strong>270,043</strong> video samples from over <strong>20,000</strong> individuals. Each sample includes corresponding speech audio, facial keypoints, and text annotations. Compared to other publicly available datasets, ours distinguishes itself through its multi-ethnic coverage and high-quality comprehensive individual attributes. We establish multiple face video generation models supporting tasks such as Text-to-Video and Image-to-Video generation. In addition, we develop comprehensive benchmarks to validate the scaling law when using different proportions of our dataset. Our primary aim is to contribute a face video dataset, particularly addressing the underrepresentation of Asian faces in existing curated datasets and thereby enriching the global spectrum of face-centric data and mitigating demographic biases.
+      </p>
+      <div class="tldr">
+        <strong>TL;DR:</strong> We introduce DH-FaceVid-1K, a large-scale, high-quality multi-ethnic face video dataset with comprehensive attributes, enabling diverse generation tasks and benchmarks while mitigating demographic biases.
+      </div>
+    </div>
+    
+    <!-- 2. Download Section -->
+    <div class="my-5">
       <div class="text-center">
-        <h2>
-          Dataset Overview
-        </h2>
-        <img src="static/images/1.png" width=100% class="img-fluid" alt="Responsive image">
+        <h2 class="title">📥 Download DH-FaceVid-1K</h2>
+        <a href="https://forms.gle/vEyouWdS9CgcRFMt9" class="btn-download-specific">Click me for application</a>
+        <div class="description">220k samples / 1.2 khrs duration / ~4.01 TB</div>
       </div>
-      <div style="margin-top: 35px;">
-       <p>
-        Overview of DH-FaceVid-1K Dataset. It consists of 270,043 video clips along with corresponding spoken audio and annotations, featuring more than 20,000 unique identities and over 1,200 hours of facial video footage captured under various environmental conditions and lighting scenarios. Notably, 83% of the dataset represents Asian individuals, addressing the significant shortage of open-source Asian face video datasets.
-</p>
+      <div class="download-alert mt-4">
+        <h3>🔥 Download Instructions & Policy</h3>
+        <p>These video samples are sourced from crowd-sourcing platforms. To ensure proper use and prevent data misuse, we manually review all download requests. By downloading and using this dataset, you are required to comply with <strong><a href="https://github.com/luna-ai-lab/DH-FaceVid-1K/blob/main/LICENSE">the license agreement</a></strong>.</p>
+        <p>To request download access, please carefully fill out the form <a href="https://forms.gle/vEyouWdS9CgcRFMt9">here</a>. <strong>You must use an official institutional email address and clearly state your research purpose.</strong> Requests from personal email providers (e.g., Gmail, Outlook) will be rejected.</p>
+        <p>Once your request is approved, we will send download instructions to your provided email address, typically within <strong>2-3 days</strong>. If you encounter any issues or do not receive the email within a reasonable time, please contact us at <a href="mailto:fenghe021209@gmail.com">fenghe021209@gmail.com</a>.</p>
+      </div>
+    </div>
+    
+    <!-- 3. Open-source Plan -->
+    <div class="my-5">
+      <h2 class="section-title">🚀 Open-source Plan</h2>
+      <p class="text-center">Our open-source roadmap is as follows. We will update the status here as we make progress.</p>
+      <div class="timeline mt-5">
+        <div class="timeline-item status-current">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content"><h3>Phase 1 <span class="timeline-status">In Progress</span></h3><p>Open filtered public datasets video ID list.</p></div>
+        </div>
+        <div class="timeline-item status-current">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content"><h3>Phase 2 <span class="timeline-status">In Progress</span></h3><p>Open the first 10% of total data.</p></div>
+        </div>
+        <div class="timeline-item status-future">
+          <div class="timeline-dot">⌛</div>
+          <div class="timeline-content"><h3>Phase 3 <span class="timeline-status">Planned</span></h3><p>Open the next 40% of total data.</p></div>
+        </div>
+        <div class="timeline-item status-future">
+          <div class="timeline-dot">⌛</div>
+          <div class="timeline-content"><h3>Phase 4 <span class="timeline-status">Planned</span></h3><p>Open the remaining 50% of total data.</p></div>
+        </div>
       </div>
     </div>
 
+    <!-- 4. Sampled Videos -->
+    <div class="my-5">
+      <h2 class="section-title">🎬 Sampled Videos</h2>
+      <p class="text-center">Please note that to ensure smooth page loading, we have resized all videos to 256x256.</p>
+      <h4 class="section-subtitle">Diverse and high-quality Asian face videos.</h4>
+      <div id="asian-gallery" class="video-gallery mt-3"></div>
+      <h4 class="section-subtitle">Multi-ethnic face videos.</h4>
+      <div id="race-gallery" class="video-gallery mt-3"></div>
+      <h4 class="section-subtitle">Face videos covering a wide range of age distributions.</h4>
+      <div id="age-gallery" class="video-gallery mt-3"></div>
+      <h4 class="section-subtitle">Face videos covering various head poses.</h4>
+      <div id="pose-gallery" class="video-gallery mt-3"></div>
+      <h4 class="section-subtitle">Face videos covering various emotions.</h4>
+      <div id="emotion-gallery" class="video-gallery mt-3"></div>
+    </div>
 
-
-
-    <h2 class="title">Download DH-FaceVid-1K</h2>
-    <a href="https://forms.gle/vEyouWdS9CgcRFMt9" class="btn-download-specific">Click me for application</a>
-    <div class="description">220k samples / 1.2 khrs duration / ~4.01 TB</div>
-  </div>
-  </div>
-      <div class="alert">
-          <h3>🔥 Please Note</h3>
-          <p>These video samples are sourced from crowd-sourcing platforms. To prevent data misuse, users must adhere to the relevant licensing agreements to access these video data. Our licensing agreement can be found <a href="https://github.com/luna-ai-lab/DH-FaceVid-1K/blob/main/LICENSE">here</a>.</p>          <p>To prevent misuse of the DH-FaceVid-1K dataset, we require you to submit information for review and approval before granting download access. Please fill out the form <a href="https://forms.gle/vEyouWdS9CgcRFMt9">here</a>.</p>
-          <p>Once approved, we will send you download instructions within 1-2 days. After receiving the download instruction email, you can click the download link in the email and follow the instructions on the page to complete the dataset download process. If you encounter any issues during the download or do not receive the email within a reasonable time, please contact us at our email address <a href="mailto:fenghe021209@gmail.com">fenghe021209@gmail.com</a>.</p>
-      </div>
-
-
-      <section class="section" style="overflow: hidden; padding: 0;">
-        <div class="container" style="max-width: 100%; margin: 0; padding: 0;">
-            <div class="columns is-centered has-text-centered" style="margin: 0;">
-                <div class="column" style="padding: 0;">
-                    <h2 class="title is-3">Face Video Datasets Comparison</h2>
-                    <p>Compared with other datasets, FaceVid-1K has a larger data volume, competitive quality, and richer attribute annotations.</p>
-                    <div class="content has-text-justified" style="margin: 0; padding: 0;">
-                        <img src="static/images/comparison.jpg" alt="Comparison" style="min-width: 60%; width: 60%; height: auto; display: block; margin: 0 auto;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- 5. Statistics and Other Figures -->
+    <div class="my-5 text-center">
+      <h2 class="section-title">📊 Face Video Datasets Comparison</h2>
+      <p class="section-text">
+        This chart compares DH-FaceVid-1K with other prominent public datasets in terms of scale, quality, and annotation richness. Our dataset demonstrates competitive advantages in data volume and attribute diversity.
+      </p>
+      <img src="static/images/comparison.jpg" class="img-fluid rounded figure-img" alt="Comparison with other datasets">
+    </div>
     
-    <section class="section" style="overflow: hidden;">
-        <div class="container is-max-desktop" style="max-width: 100%;">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-full">
-                    <h2 class="title is-3">Statics</h2>
-                    <div class="content has-text-justified">
-                        <p style="text-align: center;">Distributions of general appearances, hair colors, emotions, actions, ethnicity, and age.</p>
-                        <div style="overflow-x: auto;">
-                            <img src="static/images/figure4.jpg" alt="Statics" style="min-width: 60%; width: 60%; height: auto; display: block; margin: 0 auto;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="my-5 text-center">
+      <h2 class="section-title">📈 Statistics</h2>
+      <p class="section-text">
+        Here we visualize the distributions of key attributes within the dataset, including general appearance, hair color, emotion, action, ethnicity, and age, showcasing its comprehensive coverage.
+      </p>
+      <img src="static/images/figure4.jpg" class="img-fluid rounded figure-img" alt="Dataset statistics">
+    </div>
     
-    <section class="section" style="overflow: hidden;">
-        <div class="container is-max-desktop" style="max-width: 100%;">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-full">
-                    <h2 class="title is-3">Collection Pipe</h2>
-                    <div class="content has-text-justified">
-                        <div style="overflow-x: auto;">
-                            <img src="static/images/collect_pipe.png" alt="Collection Pipe" style="min-width: 60%; width: 60%; height: auto; display: block; margin: 0 auto;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="my-5 text-center">
+      <h2 class="section-title">⚙️ Collection Pipeline</h2>
+       <p class="section-text">
+        The data collection process involved several key stages: sourcing raw videos, detecting and cropping facial regions, filtering out low-quality or noisy clips, and generating detailed attribute descriptions.
+      </p>
+      <img src="static/images/collect_pipe.png" class="img-fluid rounded figure-img" alt="Data collection pipeline">
+    </div>
     
-    <div class="container is-max-desktop" style="max-width: 100%; margin-top: 2rem;">
-      <div class="columns is-centered has-text-centered">
-          <div class="column is-full">
-              <h2 class="title is-3">Comprehensive Attribute List</h2>
-              <div class="content has-text-justified">
-                  <p style="text-align: center;">Comprehensive attribute list of DH-FaceVid-1K, including ethnicities, appearance details, emotions, actions, and lighting conditions.</p>
-                  <div style="overflow-x: auto;">
-                      <img src="static/images/detail.png" alt="Comprehensive Attribute List" style="min-width: 60%; width: 60%; height: auto; display: block; margin: 0 auto;">
-                  </div>
-              </div>
-          </div>
+    <div class="my-5 text-center">
+      <h2 class="section-title">📋 Comprehensive Attribute List</h2>
+      <p class="section-text">
+        A detailed breakdown of the extensive attributes annotated in DH-FaceVid-1K, spanning ethnicities, appearance details, emotions, actions, and various lighting conditions.
+      </p>
+      <img src="static/images/detail.png" class="img-fluid rounded figure-img" alt="Detailed attribute list">
+    </div>
+
+    <!-- BibTeX -->
+    <div class="my-5">
+      <h2 class="section-title">📚 BibTeX</h2>
+      <div class="bibtex-box">
+        <pre><code>@inproceedings{di2025facevid,
+    title = {DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
+    author = {Di, Donglin and Feng, He and Sun, Wenzhang and Ma, Yongjia and Li, Hao and Chen, Wei and Fan, Lei and Su, Tonghua and Yang, Xun},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year = {2025}
+}</code></pre>
       </div>
     </div>
-    </section>
-
-
-
-
-
-    <div style="margin-top:50px;">
-      <h2 class="text-center">Sampled Videos</h2>  
-      <h4>Please note that to ensure smooth page loading, we have resized all videos to 256*256. <br>
-        Diverse and high-quality Asian face videos.</h4>
-     <div class="row">
-       <div class="col-md-12 col-sm-12 col-xs-12 gallery">
-         <div id="asian-gallery" style="max-width: 100%; margin: 0 auto; background: #f5f5f5; padding: 10px; border-radius: 8px; display: grid; grid-template-columns: repeat(auto-fill, minmax(256px, 1fr)); justify-items: center;">
-           <!-- Videos will be dynamically inserted here -->
-         </div>
-       </div>
-     </div>
-
-
-
-     
-<script>
-  // Asian face video file list
-  const asianFiles = [
-    "000680.mp4",
-    "001406.mp4",
-    "001592.mp4",
-    "001600.mp4",
-    "002161.mp4",
-    "002523.mp4",
-    "002728.mp4",
-    "003696.mp4",
-    "005192.mp4",
-    "007860.mp4",
-    "007956.mp4",
-    "024572.mp4",
-    "067379.mp4",
-    "085089.mp4",
-    "091313.mp4",
-    "092616.mp4",
-    "105369.mp4",
-    "106321.mp4",
-    "RS127258_segment_049_7350_0.mp4",
-    "RS127710_segment_005_745_0.mp4"
-  ];
-
-  // Video directory path
-  const asianDir = "facevid/asian/";
-  
-  const asianGrid = document.getElementById("asian-gallery");
-
-  // Create evenly distributed video grid
-  asianFiles.forEach((filename) => {
-    const videoWrapper = document.createElement("div");
-    videoWrapper.style.position = "relative";
-    videoWrapper.style.width = "256px";
-    videoWrapper.style.height = "256px";
-    videoWrapper.style.margin = "10px";
     
-    const videoElement = document.createElement("video");
-    videoElement.controls = true;
-    videoElement.loop = true;
-    videoElement.muted = true;
-    videoElement.style.width = "100%";
-    videoElement.style.height = "100%";
-    videoElement.style.objectFit = "cover";
-    videoElement.style.borderRadius = "8px";
-    videoElement.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
-    videoElement.style.cursor = "pointer";
-    
-    const sourceElement = document.createElement("source");
-    sourceElement.src = asianDir + filename;
-    sourceElement.type = "video/mp4";
-    
-    // Add video ID as title
-    const videoTitle = document.createElement("div");
-    videoTitle.textContent = filename.replace('.mp4', '');
-    videoTitle.style.position = "absolute";
-    videoTitle.style.bottom = "10px";
-    videoTitle.style.left = "10px";
-    videoTitle.style.right = "10px";
-    videoTitle.style.color = "white";
-    videoTitle.style.backgroundColor = "rgba(0,0,0,0.7)";
-    videoTitle.style.padding = "4px 8px";
-    videoTitle.style.borderRadius = "4px";
-    videoTitle.style.fontSize = "12px";
-    videoTitle.style.textAlign = "center";
-    videoTitle.style.overflow = "hidden";
-    videoTitle.style.textOverflow = "ellipsis";
-    videoTitle.style.whiteSpace = "nowrap";
-    
-    // Click to play/pause
-    videoWrapper.addEventListener('click', function() {
-      if (videoElement.paused) {
-        videoElement.play().catch(e => console.log("Play failed:", e));
-      } else {
-        videoElement.pause();
-      }
-    });
-    
-    videoElement.appendChild(sourceElement);
-    videoWrapper.appendChild(videoElement);
-    videoWrapper.appendChild(videoTitle);
-    asianGrid.appendChild(videoWrapper);
-  });
-</script>
+    <!-- Footer -->
+    <footer class="text-center my-5">
+      <p>Homepage Template adapted from <a href="https://github.com/m-niemeyer/regnerf" target="_blank">the RegNeRF project page</a>.</p>
+    </footer>
 
-<style>
-  /* Responsive adjustments */
-  @media (max-width: 900px) {
-    #asian-gallery {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    #asian-gallery {
-      grid-template-columns: 1fr !important;
-    }
-    
-    #asian-gallery div {
-      width: 100% !important;
-      height: auto !important;
-      aspect-ratio: 1/1;
-    }
-  }
-</style>
-    
-
-<h4>Multi-ethnic face videos.</h4>
-  <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12 gallery">
-      <div id="race-gallery" style="max-width: 100%; margin: 0 auto; background: #f5f5f5; padding: 10px; border-radius: 8px; display: grid; grid-template-columns: repeat(auto-fill, minmax(256px, 1fr)); justify-items: center;">
-        <!-- Videos will be dynamically inserted here -->
-      </div>
-    </div>
   </div>
-  
+
+  <!-- Consolidated JavaScript -->
   <script>
-    // Race diversity video file list
-    const raceFiles = [
-      "026237.mp4",
-      "046378.mp4",
-      "061175.mp4",
-      "076105.mp4",
-      "39Br2A7lxac_22.mp4",
-      "3lfO6OCqcCA_0.mp4",
-      "7n619EfuSPw_0.mp4",
-      "BFs-a-hqs2I_9.mp4",
-      "QaFqZQ6JQhs_1.mp4",
-      "tqSUS5-JXIs_1.mp4",
-      "UF2c01_glHU_3.mp4",
-      "Uu3xazfdmvk_34.mp4",
-      "V4ZyJR30wyg_29.mp4",
-      "WA1L8vXkSKQ_0001_S370_E849_L115_T107_R515_B507.mp4",
-      "WN2XSI6vZIg_18.mp4",
-      "XoGhKL6CKwg_12.mp4"
-    ];
-  
-    // Video directory path
-    const raceDir = "facevid/race/";
-    
-    const raceGrid = document.getElementById("race-gallery");
-  
-    // Create evenly distributed video grid
-    raceFiles.forEach((filename) => {
-      const videoWrapper = document.createElement("div");
-      videoWrapper.style.position = "relative";
-      videoWrapper.style.width = "256px";
-      videoWrapper.style.height = "256px";
-      videoWrapper.style.margin = "10px";
-      
-      const videoElement = document.createElement("video");
-      videoElement.controls = true;
-      videoElement.loop = true;
-      videoElement.muted = true;
-      videoElement.style.width = "100%";
-      videoElement.style.height = "100%";
-      videoElement.style.objectFit = "cover";
-      videoElement.style.borderRadius = "8px";
-      videoElement.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
-      videoElement.style.cursor = "pointer";
-      
-      const sourceElement = document.createElement("source");
-      sourceElement.src = raceDir + filename;
-      sourceElement.type = "video/mp4";
-      
-      // Add video ID as title (shortened if too long)
-      const videoTitle = document.createElement("div");
-      const displayName = filename.length > 15 ? 
-        filename.substring(0, 12) + "..." + filename.slice(-4) : 
-        filename;
-      videoTitle.textContent = displayName.replace('.mp4', '');
-      videoTitle.style.position = "absolute";
-      videoTitle.style.bottom = "10px";
-      videoTitle.style.left = "10px";
-      videoTitle.style.right = "10px";
-      videoTitle.style.color = "white";
-      videoTitle.style.backgroundColor = "rgba(0,0,0,0.7)";
-      videoTitle.style.padding = "4px 8px";
-      videoTitle.style.borderRadius = "4px";
-      videoTitle.style.fontSize = "12px";
-      videoTitle.style.textAlign = "center";
-      videoTitle.style.overflow = "hidden";
-      videoTitle.style.textOverflow = "ellipsis";
-      videoTitle.style.whiteSpace = "nowrap";
-      
-      // Click to play/pause
-      videoWrapper.addEventListener('click', function() {
-        if (videoElement.paused) {
-          videoElement.play().catch(e => console.log("Play failed:", e));
-        } else {
-          videoElement.pause();
-        }
-      });
-      
-      videoElement.appendChild(sourceElement);
-      videoWrapper.appendChild(videoElement);
-      videoWrapper.appendChild(videoTitle);
-      raceGrid.appendChild(videoWrapper);
+    document.addEventListener('DOMContentLoaded', function() {
+      function createVideoGrid(containerId, fileList, directory) {
+        const gridContainer = document.getElementById(containerId);
+        if (!gridContainer) return;
+
+        fileList.forEach(filename => {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'video-wrapper';
+
+          const video = document.createElement('video');
+          video.loop = true;
+          video.muted = true;
+          video.playsInline = true;
+          video.preload = 'metadata';
+          
+          wrapper.addEventListener('mouseenter', () => video.play().catch(e => {}));
+          wrapper.addEventListener('mouseleave', () => video.pause());
+
+          const source = document.createElement('source');
+          source.src = directory + filename;
+          source.type = 'video/mp4';
+
+          const title = document.createElement('div');
+          title.className = 'video-title';
+          title.textContent = filename.replace('.mp4', '');
+
+          video.appendChild(source);
+          wrapper.appendChild(video);
+          wrapper.appendChild(title);
+          gridContainer.appendChild(wrapper);
+          
+          wrapper.addEventListener('click', () => {
+            if (video.paused) video.play().catch(e => {});
+            else video.pause();
+          });
+        });
+      }
+
+      const asianFiles = ["000680.mp4", "001406.mp4", "001592.mp4", "001600.mp4", "002161.mp4", "002523.mp4", "002728.mp4", "003696.mp4", "005192.mp4", "007860.mp4", "007956.mp4", "024572.mp4", "067379.mp4", "085089.mp4", "091313.mp4", "092616.mp4", "105369.mp4", "106321.mp4", "RS127258_segment_049_7350_0.mp4", "RS127710_segment_005_745_0.mp4"];
+      const raceFiles = ["026237.mp4", "046378.mp4", "061175.mp4", "076105.mp4", "39Br2A7lxac_22.mp4", "3lfO6OCqcCA_0.mp4", "7n619EfuSPw_0.mp4", "BFs-a-hqs2I_9.mp4", "QaFqZQ6JQhs_1.mp4", "tqSUS5-JXIs_1.mp4", "UF2c01_glHU_3.mp4", "Uu3xazfdmvk_34.mp4", "V4ZyJR30wyg_29.mp4", "WA1L8vXkSKQ_0001_S370_E849_L115_T107_R515_B507.mp4", "WN2XSI6vZIg_18.mp4", "XoGhKL6CKwg_12.mp4"];
+      const ageFiles = ["001106.mp4", "002148.mp4", "003762.mp4", "019479.mp4", "020955.mp4", "028457.mp4", "029951.mp4", "039691.mp4", "44840.mp4", "47079.mp4"];
+      const poseFiles = ["008001.mp4", "013064.mp4", "027862.mp4", "033011.mp4", "034785.mp4", "0s1UUn9aSSw_7.mp4", "3nYrako9XM4_0.mp4", "55025.mp4", "61005.mp4", "62149.mp4", "_W4Em_fHubY_10.mp4", "_zNhY-IBLzc_64.mp4"];
+      const emotionFiles = ["14435.mp4", "15002.mp4", "Czb5Ml9VDsI_0.mp4", "GrjEDguF59Q_0.mp4", "hM3nn30NxCE_0.mp4", "PP9l4LP0WPI_0.mp4", "qfEkv726kdQ_6.mp4", "qnFWCagTOtw_1.mp4", "V4cpZlFESeA_87.mp4", "Z_9KUBCidow_3.mp4"];
+
+      createVideoGrid('asian-gallery', asianFiles, "facevid/asian/");
+      createVideoGrid('race-gallery', raceFiles, "facevid/race/");
+      createVideoGrid('age-gallery', ageFiles, "facevid/age/");
+      createVideoGrid('pose-gallery', poseFiles, "facevid/pose/");
+      createVideoGrid('emotion-gallery', emotionFiles, "facevid/emotion/");
     });
   </script>
-  
-  <style>
-    /* Responsive adjustments */
-    @media (max-width: 900px) {
-      #race-gallery {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-    }
-    
-    @media (max-width: 600px) {
-      #race-gallery {
-        grid-template-columns: 1fr !important;
-      }
-      
-      #race-gallery div {
-        width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 1/1;
-      }
-    }
-  </style>
-    
-    <h4>Face videos covering a wide range of age distributions.</h4>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 gallery" id="age-gallery" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-items: center; margin: 0 auto; max-width: 1400px;">
-        <!-- Videos will be dynamically loaded via JavaScript -->
-      </div>
-    </div>
-    
-    <script>
-      // Age distribution video file list
-      const ageFiles = [
-        "001106.mp4",
-        "002148.mp4",
-        "003762.mp4",
-        "019479.mp4",
-        "020955.mp4",
-        "028457.mp4",
-        "029951.mp4",
-        "039691.mp4",
-        "44840.mp4",
-        "47079.mp4"
-      ];
-    
-      // Video directory path
-      const ageDir = "facevid/age/";
-      
-      const ageGrid = document.getElementById("age-gallery");
-    
-      // Create evenly distributed video grid
-      ageFiles.forEach((filename) => {
-        const videoWrapper = document.createElement("div");
-        videoWrapper.style.position = "relative";
-        videoWrapper.style.width = "200px";  // Slightly smaller to fit 5 in a row
-        videoWrapper.style.height = "200px";
-        videoWrapper.style.margin = "10px";
-        
-        const videoElement = document.createElement("video");
-        videoElement.controls = true;
-        videoElement.loop = true;
-        videoElement.muted = true;
-        videoElement.style.width = "100%";
-        videoElement.style.height = "100%";
-        videoElement.style.objectFit = "cover";
-        videoElement.style.borderRadius = "8px";
-        videoElement.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
-        videoElement.style.cursor = "pointer";
-        
-        const sourceElement = document.createElement("source");
-        sourceElement.src = ageDir + filename;
-        sourceElement.type = "video/mp4";
-        
-        // Add video ID as title
-        const videoTitle = document.createElement("div");
-        videoTitle.textContent = filename.replace('.mp4', '');
-        videoTitle.style.position = "absolute";
-        videoTitle.style.bottom = "10px";
-        videoTitle.style.left = "10px";
-        videoTitle.style.right = "10px";
-        videoTitle.style.color = "white";
-        videoTitle.style.backgroundColor = "rgba(0,0,0,0.7)";
-        videoTitle.style.padding = "4px 8px";
-        videoTitle.style.borderRadius = "4px";
-        videoTitle.style.fontSize = "10px";  // Smaller font for compact display
-        videoTitle.style.textAlign = "center";
-        videoTitle.style.overflow = "hidden";
-        videoTitle.style.textOverflow = "ellipsis";
-        videoTitle.style.whiteSpace = "nowrap";
-        
-        // Click to play/pause
-        videoWrapper.addEventListener('click', function() {
-          if (videoElement.paused) {
-            videoElement.play().catch(e => console.log("Play failed:", e));
-          } else {
-            videoElement.pause();
-          }
-        });
-        
-        videoElement.appendChild(sourceElement);
-        videoWrapper.appendChild(videoElement);
-        videoWrapper.appendChild(videoTitle);
-        ageGrid.appendChild(videoWrapper);
-      });
-    </script>
-    
-    <style>
-      /* Responsive adjustments */
-      @media (max-width: 1200px) {
-        #age-gallery {
-          grid-template-columns: repeat(3, 1fr) !important;
-        }
-      }
-      
-      @media (max-width: 900px) {
-        #age-gallery {
-          grid-template-columns: repeat(2, 1fr) !important;
-        }
-      }
-      
-      @media (max-width: 600px) {
-        #age-gallery {
-          grid-template-columns: repeat(1, 1fr) !important;
-        }
-        
-        #age-gallery div {
-          width: 100% !important;
-          height: auto !important;
-          aspect-ratio: 1/1;
-        }
-      }
-    </style>
-    
-    <h4>Face videos covering various head poses.</h4>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12 gallery" id="pose-gallery" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-items: center; margin: 0 auto; max-width: 1400px;">
-        <!-- Videos will be dynamically loaded via JavaScript -->
-      </div>
-    </div>
-    
-    <script>
-      // Pose variation video file list (updated with actual files)
-      const poseFiles = [
-        "008001.mp4",
-        "013064.mp4",
-        "027862.mp4",
-        "033011.mp4",
-        "034785.mp4",
-        "0s1UUn9aSSw_7.mp4",
-        "3nYrako9XM4_0.mp4",
-        "55025.mp4",
-        "61005.mp4",
-        "62149.mp4",
-        "_W4Em_fHubY_10.mp4",
-        "_zNhY-IBLzc_64.mp4"
-      ];
-    
-      // Video directory path
-      const poseDir = "facevid/pose/";
-      
-      const poseGrid = document.getElementById("pose-gallery");
-    
-      // Create evenly distributed video grid
-      poseFiles.forEach((filename) => {
-        const videoWrapper = document.createElement("div");
-        videoWrapper.style.position = "relative";
-        videoWrapper.style.width = "200px";  // Slightly smaller to fit 5 in a row
-        videoWrapper.style.height = "200px";
-        videoWrapper.style.margin = "10px";
-        
-        const videoElement = document.createElement("video");
-        videoElement.controls = true;
-        videoElement.loop = true;
-        videoElement.muted = true;
-        videoElement.style.width = "100%";
-        videoElement.style.height = "100%";
-        videoElement.style.objectFit = "cover";
-        videoElement.style.borderRadius = "8px";
-        videoElement.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
-        videoElement.style.cursor = "pointer";
-        
-        const sourceElement = document.createElement("source");
-        sourceElement.src = poseDir + filename;
-        sourceElement.type = "video/mp4";
-        
-        // Add video ID as title (shortened if too long)
-        const videoTitle = document.createElement("div");
-        const displayName = filename.length > 15 ? 
-          filename.substring(0, 12) + "..." + filename.slice(-4) : 
-          filename;
-        videoTitle.textContent = displayName.replace('.mp4', '');
-        videoTitle.style.position = "absolute";
-        videoTitle.style.bottom = "10px";
-        videoTitle.style.left = "10px";
-        videoTitle.style.right = "10px";
-        videoTitle.style.color = "white";
-        videoTitle.style.backgroundColor = "rgba(0,0,0,0.7)";
-        videoTitle.style.padding = "4px 8px";
-        videoTitle.style.borderRadius = "4px";
-        videoTitle.style.fontSize = "10px";  // Smaller font for compact display
-        videoTitle.style.textAlign = "center";
-        videoTitle.style.overflow = "hidden";
-        videoTitle.style.textOverflow = "ellipsis";
-        videoTitle.style.whiteSpace = "nowrap";
-        
-        // Click to play/pause
-        videoWrapper.addEventListener('click', function() {
-          if (videoElement.paused) {
-            videoElement.play().catch(e => console.log("Play failed:", e));
-          } else {
-            videoElement.pause();
-          }
-        });
-        
-        videoElement.appendChild(sourceElement);
-        videoWrapper.appendChild(videoElement);
-        videoWrapper.appendChild(videoTitle);
-        poseGrid.appendChild(videoWrapper);
-      });
-    </script>
-    
-    <style>
-      /* Responsive adjustments */
-      @media (max-width: 1200px) {
-        #pose-gallery {
-          grid-template-columns: repeat(3, 1fr) !important;
-        }
-      }
-      
-      @media (max-width: 900px) {
-        #pose-gallery {
-          grid-template-columns: repeat(2, 1fr) !important;
-        }
-      }
-      
-      @media (max-width: 600px) {
-        #pose-gallery {
-          grid-template-columns: repeat(1, 1fr) !important;
-        }
-        
-        #pose-gallery div {
-          width: 100% !important;
-          height: auto !important;
-          aspect-ratio: 1/1;
-        }
-      }
-    </style>
-
-<h4>Face videos covering various emotions.</h4>
-<div class="row">
-  <div class="col-md-12 col-sm-12 col-xs-12 gallery" id="emotion-gallery" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-items: center; margin: 0 auto; max-width: 1400px;">
-    <!-- Videos will be dynamically loaded via JavaScript -->
-  </div>
-</div>
-
-<script>
-  // Emotion variation video file list
-  const emotionFiles = [
-    "14435.mp4",
-    "15002.mp4",
-    "Czb5Ml9VDsI_0.mp4",
-    "GrjEDguF59Q_0.mp4",
-    "hM3nn30NxCE_0.mp4",
-    "PP9l4LP0WPI_0.mp4",
-    "qfEkv726kdQ_6.mp4",
-    "qnFWCagTOtw_1.mp4",
-    "V4cpZlFESeA_87.mp4",
-    "Z_9KUBCidow_3.mp4"
-  ];
-
-  // Video directory path
-  const emotionDir = "facevid/emotion/";
-  
-  const emotionGrid = document.getElementById("emotion-gallery");
-
-  // Create evenly distributed video grid
-  emotionFiles.forEach((filename) => {
-    const videoWrapper = document.createElement("div");
-    videoWrapper.style.position = "relative";
-    videoWrapper.style.width = "200px";
-    videoWrapper.style.height = "200px";
-    videoWrapper.style.margin = "10px";
-    
-    const videoElement = document.createElement("video");
-    videoElement.controls = true;
-    videoElement.loop = true;
-    videoElement.muted = true;
-    videoElement.style.width = "100%";
-    videoElement.style.height = "100%";
-    videoElement.style.objectFit = "cover";
-    videoElement.style.borderRadius = "8px";
-    videoElement.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
-    videoElement.style.cursor = "pointer";
-    
-    const sourceElement = document.createElement("source");
-    sourceElement.src = emotionDir + filename;
-    sourceElement.type = "video/mp4";
-    
-    // Add video ID as title (shortened if too long)
-    const videoTitle = document.createElement("div");
-    const displayName = filename.length > 15 ? 
-      filename.substring(0, 12) + "..." + filename.slice(-4) : 
-      filename;
-    videoTitle.textContent = displayName.replace('.mp4', '');
-    videoTitle.style.position = "absolute";
-    videoTitle.style.bottom = "10px";
-    videoTitle.style.left = "10px";
-    videoTitle.style.right = "10px";
-    videoTitle.style.color = "white";
-    videoTitle.style.backgroundColor = "rgba(0,0,0,0.7)";
-    videoTitle.style.padding = "4px 8px";
-    videoTitle.style.borderRadius = "4px";
-    videoTitle.style.fontSize = "10px";
-    videoTitle.style.textAlign = "center";
-    videoTitle.style.overflow = "hidden";
-    videoTitle.style.textOverflow = "ellipsis";
-    videoTitle.style.whiteSpace = "nowrap";
-    
-    // Click to play/pause
-    videoWrapper.addEventListener('click', function() {
-      if (videoElement.paused) {
-        videoElement.play().catch(e => console.log("Play failed:", e));
-      } else {
-        videoElement.pause();
-      }
-    });
-    
-    videoElement.appendChild(sourceElement);
-    videoWrapper.appendChild(videoElement);
-    videoWrapper.appendChild(videoTitle);
-    emotionGrid.appendChild(videoWrapper);
-  });
-</script>
-
-<style>
-  /* Responsive adjustments */
-  @media (max-width: 1200px) {
-    #emotion-gallery {
-      grid-template-columns: repeat(3, 1fr) !important;
-    }
-  }
-  
-  @media (max-width: 900px) {
-    #emotion-gallery {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    #emotion-gallery {
-      grid-template-columns: repeat(1, 1fr) !important;
-    }
-    
-    #emotion-gallery div {
-      width: 100% !important;
-      height: auto !important;
-      aspect-ratio: 1/1;
-    }
-  }
-</style>
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{di2025facevid,
-      title = {DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
-      author = {Di, Donglin and Feng, He and Sun, Wenzhang and Ma, Yongjia and Li, Hao and Chen, Wei and Fan, Lei and Su, Tonghua and Yang, Xun},
-      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-      year = {2025}
-    }</code></pre>
-  </div>
-</section>
-      
-      <div>
-        <h2 class="text-center" style="margin-top: 30px;">
-          Homepage Template
-        </h2>
-        <p>
-          If you want to use this fully-responsive and easy-to-adapt homepage template, you can download it from <a href="https://github.com/m-niemeyer/regnerf" target="_blank">the github repository</a>.
-        </p>
-      </div>
-
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
