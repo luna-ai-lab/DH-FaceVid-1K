@@ -160,9 +160,11 @@ Comprehensive attribute list of DH-FaceVid-1K, including ethnicities, appearance
 ## ✒️ Citation
 
 If you find the DH-FaceVid-1K dataset useful for your work, please consider citing our paper:
+```
 @inproceedings{di2025facevid,
 title = {DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
 author = {Di, Donglin and Feng, He and Sun, Wenzhang and Ma, Yongjia and Li, Hao and Chen, Wei and Fan, Lei and Su, Tonghua and Yang, Xun},
 booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
 year = {2025}
 }
+```
