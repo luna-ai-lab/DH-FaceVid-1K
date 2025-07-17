@@ -51,53 +51,63 @@ Our open-source roadmap is as follows. We will update the status here as we make
 
 ## Video Samples in DH-FaceVid-1K
 
+<h2>Video Samples in DH-FaceVid-1K (7x4 Curated Grid)</h2>
+
 <table class="center" style="border-collapse: collapse; margin: auto;">
   <!-- Row 1 -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/000680.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/001106.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/001406.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/001592.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/000680.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/001106.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/001406.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/001592.gif" style="width: 100%;"></td>
   </tr>
 
   <!-- Row 2 -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/001600.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/002148.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/002161.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/002523.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/002148.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/002728.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/005192.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/007956.gif" style="width: 100%;"></td>
   </tr>
 
   <!-- Row 3 -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/002728.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/003696.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/003762.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/005192.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/019479.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/026237.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/034785.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/046378.gif" style="width: 100%;"></td>
   </tr>
 
   <!-- Row 4 -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/007860.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/007956.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/008001.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/013064.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/061175.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/092616.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/105369.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/14435.gif" style="width: 100%;"></td>
   </tr>
 
-  <!-- Row 5 -->
+  <!-- Row 5: Introducing alphanumeric IDs -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/019479.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/020955.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/024572.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/026237.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/0s1UUn9aSSw_7.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/39Br2A7lxac_22.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/3lfO6OCqcCA_0.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/BFs-a-hqs2I_9.gif" style="width: 100%;"></td>
+  </tr>
+  
+  <!-- Row 6: More alphanumeric IDs -->
+  <tr>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/Czb5Ml9VDsI_0.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/hM3nn30NxCE_0.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/PP9l4LP0WPI_0.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/qnFWCagTOtw_1.gif" style="width: 100%;"></td>
   </tr>
 
-  <!-- Row 6 -->
+  <!-- Row 7: Final selection, including complex names -->
   <tr>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/027862.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/028457.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/029951.gif" style="width: 100%;"></td>
-    <td width="16.66%" style="border: none; padding: 5px;"><img src="facevid/gifs/033011.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/Uu3xazfdmvk_34.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/V4cpZlFESeA_87.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/WA1L8vXkSKQ_0001_S370_E849_L115_T107_R515_B507.gif" style="width: 100%;"></td>
+    <td width="25%" style="border: none; padding: 5px;"><img src="facevid/gifs/RS127258_segment_049_7350_0.gif" style="width: 100%;"></td>
   </tr>
 </table>
 
