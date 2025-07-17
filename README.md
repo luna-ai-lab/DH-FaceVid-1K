@@ -54,98 +54,98 @@ Our open-source roadmap is as follows. We will update the status here as we make
 <table class="center">
   <!-- Row 1 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/000680.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/001106.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/001406.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/001592.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/001600.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/002148.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/002161.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/002523.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/000680.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/001106.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/001406.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/001592.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/001600.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/002148.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/002161.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/002523.gif"></td>
   </tr>
 
   <!-- Row 2 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/002728.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/003696.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/003762.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/005192.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/007860.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/007956.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/008001.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/013064.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/002728.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/003696.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/003762.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/005192.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/007860.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/007956.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/008001.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/013064.gif"></td>
   </tr>
 
   <!-- Row 3 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/019479.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/020955.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/024572.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/026237.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/027862.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/028457.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/029951.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/033011.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/019479.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/020955.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/024572.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/026237.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/027862.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/028457.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/029951.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/033011.gif"></td>
   </tr>
 
   <!-- Row 4 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/034785.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/039691.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/046378.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/061175.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/067379.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/076105.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/085089.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/091313.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/034785.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/039691.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/046378.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/061175.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/067379.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/076105.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/085089.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/091313.gif"></td>
   </tr>
 
   <!-- Row 5 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/092616.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/0s1UUn9aSSw_7.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/105369.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/106321.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/14435.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/15002.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/39Br2A7lxac_22.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/3lfO6OCqcCA_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/092616.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/0s1UUn9aSSw_7.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/105369.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/106321.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/14435.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/15002.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/39Br2A7lxac_22.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/3lfO6OCqcCA_0.gif"></td>
   </tr>
 
   <!-- Row 6 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/3nYrako9XM4_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/44840.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/47079.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/55025.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/61005.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/62149.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/7n619EfuSPw_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/BFs-a-hqs2I_9.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/3nYrako9XM4_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/44840.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/47079.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/55025.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/61005.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/62149.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/7n619EfuSPw_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/BFs-a-hqs2I_9.gif"></td>
   </tr>
 
   <!-- Row 7 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/Czb5Ml9VDsI_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/GrjEDguF59Q_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/hM3nn30NxCE_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/PP9l4LP0WPI_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/QaFqZQ6JQhs_1.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/qfEkv726kdQ_6.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/qnFWCagTOtw_1.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/RS127258_segment_049_7350_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/Czb5Ml9VDsI_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/GrjEDguF59Q_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/hM3nn30NxCE_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/PP9l4LP0WPI_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/QaFqZQ6JQhs_1.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/qfEkv726kdQ_6.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/qnFWCagTOtw_1.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/RS127258_segment_049_7350_0.gif"></td>
   </tr>
 
   <!-- Row 8 -->
   <tr>
-    <td width=12.5% style="border: none"><img src="gifs/RS127710_segment_005_745_0.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/tqSUS5-JXIs_1.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/UF2c01_glHU_3.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/Uu3xazfdmvk_34.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/V4cpZlFESeA_87.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/V4ZyJR30wyg_29.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/WA1L8vXkSKQ_0001_S370_E849_L115_T107_R515_B507.gif"></td>
-    <td width=12.5% style="border: none"><img src="gifs/WN2XSI6vZIg_18.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/RS127710_segment_005_745_0.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/tqSUS5-JXIs_1.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/UF2c01_glHU_3.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/Uu3xazfdmvk_34.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/V4cpZlFESeA_87.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/V4ZyJR30wyg_29.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/WA1L8vXkSKQ_0001_S370_E849_L115_T107_R515_B507.gif"></td>
+    <td width=12.5% style="border: none"><img src="facevids/gifs/WN2XSI6vZIg_18.gif"></td>
   </tr>
 </table>
 
