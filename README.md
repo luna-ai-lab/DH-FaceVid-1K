@@ -41,12 +41,12 @@ Once approved, we will send you download instructions within 1-2 days. After rec
 
 ## Open-source Plan
 
-Our open-source plan will be carried out in the following four phases:
+Our open-source roadmap is as follows. We will update the status here as we make progress.
 
--   **Phase 1:** Open filtered public datasets video ID list
--   **Phase 2:** Open 10% of total data
--   **Phase 3:** Open 40% of total data
--   **Phase 4:** Open 50% of total data
+- [x] **Phase 1:** Open filtered public datasets video ID list
+- [ ] **Phase 2:** Open 10% of total data
+- [ ] **Phase 3:** Open 40% of total data
+- [ ] **Phase 4:** Open 50% of total data
 
 ## Face Video Datasets Comparison
 
