@@ -17,6 +17,6 @@
     <circle cx="75" cy="90" r="12" fill="#ffffff"/>
     <polygon points="71,84 82,90 71,96" fill="#003f5c"/>
     <circle cx="125" cy="90" r="8" fill="#ffffff" />
-    <circle cx="125"cy="90" r="4" fill="#003f5c" />
+    <circle cx="125" cy="90" r="4" fill="#003f5c" />
     <path d="M 90,140 Q 100,150 110,140" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
 </svg>
