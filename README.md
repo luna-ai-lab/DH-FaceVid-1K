@@ -101,11 +101,11 @@ centric data and mitigating demographic biases. -->
 
 If you find DH-FaceVid-1K dataset useful for your work or use data from DH-FaceVid-1K dataset, please cite:
 ```
-@inproceedings{Di2024FaceVid1KAL,
-      title={FaceVid-1K: A Large-Scale High-Quality Multiracial Human Face Video Dataset},
-      author={Donglin Di and He Feng and Wenzhang Sun and Yongjia Ma and Hao Li and Wei Chen and Xiaofei Gou and Tonghua Su and Xun Yang},
-      year={2024},
-      url={https://api.semanticscholar.org/CorpusID:273233717}
+@inproceedings{di2025dhfacevid1k,
+  title={DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation},
+  author={Donglin Di and He Feng and Wenzhang Sun and Yongjia Ma and Hao Li and Chen Wei and Lei Fan and Tonghua Su and Xun Yang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2025}
 }
 ```
 
