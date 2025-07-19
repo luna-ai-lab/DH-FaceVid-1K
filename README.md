@@ -35,7 +35,7 @@ If you wish to download the DH-FaceVid-1K dataset, please follow these steps:
 
 1.  **Fill out the request form**: To prevent misuse of the dataset, we require you to submit information for review and approval. Please carefully fill out [**this form**](https://forms.gle/vEyouWdS9CgcRFMt9). **You must use an official institutional email address and clearly state your research purpose.** Requests from personal email providers (e.g., Gmail, Outlook) will be rejected. When filling out the form, ensure your information is accurate, especially **your email address**, as this is where we will send the download instructions.
 
-2.  **Await email delivery**: Once we receive and approve your submission, we will send you an email with download instructions, typically **within 2-3 days**. Please keep an eye on your inbox, including the spam or junk mail folders, to avoid missing our message.
+2.  **Await email delivery**: Once we receive and approve your submission, we will send you an email with download instructions, typically **within 2-3 days**. Please keep an eye on your inbox, including the spam or junk mail folders, to avoid missing our message. We currently support the four download methods specified in the request form. For optimal performance, we recommend using either Alibaba Cloud or Hugging Face.
 
 3.  **Download the dataset**: After receiving the email, you can click the download link provided and follow the instructions on the page to complete the download process. If you encounter any issues or do not receive the email within a reasonable time, please contact us at **fenghe021209@gmail.com**.
 
