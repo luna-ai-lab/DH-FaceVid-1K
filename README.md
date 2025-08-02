@@ -48,9 +48,13 @@ If you wish to download the DH-FaceVid-1K dataset, please follow these steps:
 Our open-source roadmap is as follows. We will update the status here as we make progress.
 
 ✅ Phase 1: Open filtered public datasets video ID list (Finished)
+
 ✅ Phase 2: Open the first 10% of total data (Finished)
+
 ✅ Phase 3: Open an additional 40% of total data (Finished)
+
 ✅ Phase 4: Open the final 50% of total data, completing the full 100% release (Finished)
+
 ✨ All data has been fully released!
 
 ---
