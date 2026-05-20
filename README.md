@@ -15,6 +15,8 @@
 
 Official repository of **​​DH-FaceVid-1K: A Large-Scale High-Quality Dataset for Face Video Generation**.
 
+> **📢 Update:** Thank you for your interest in DH-FaceVid-1K. Please submit an access request on the Hugging Face dataset page: [https://huggingface.co/datasets/jjuik2014/DH-FaceVid-1K](https://huggingface.co/datasets/jjuik2014/DH-FaceVid-1K). For verification, please use a Hugging Face account registered with your institutional email address. After we receive the request through Hugging Face, we will review it accordingly.
+
 *[Donglin Di](https://scholar.google.com/citations?hl=zh-CN&user=L8tcNioAAAAJ), [He Feng](https://github.com/fenghe12), [Wenzhang Sun](https://scholar.google.hk/citations?user=3-9aEOQAAAAJ&hl=zh-CN&oi=ao), [Yongjia Ma](https://scholar.google.hk/citations?user=BszRJxkAAAAJ&hl=zh-CN&oi=ao), [Hao Li](#), [Chen Wei](#), [Lei Fan](https://hellodfan.github.io/), [Tonghua Su](https://scholar.google.hk/citations?hl=zh-CN&user=67fxVzoAAAAJ), [Xun Yang](https://scholar.google.hk/citations?hl=zh-CN&user=ro8lzsUAAAAJ)*
 
 ---
